@@ -403,11 +403,9 @@ if(Ti.Platform.osname === 'android')
 }
 else
 {
-	var navGroup = Ti.UI.iPhone.createNavigationGroup({
+	var navGroup = Ti.UI.iOS.createNavigationWindow({
 		window:self
 	});
-
-	var main = Ti.UI.createWindow();
-	main.add(navGroup);
-	main.open();
+	
+	navGroup.open();
 }
